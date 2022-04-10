@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="n">IP Address Tracker</h1>
+    <div class="sel">
+      <input type="text" class="search" placeholder="Search for any IP address or domain">  
+      <button class="btnSearch"> 
+        <img src="./images/icon-arrow.svg" alt="">
+      </button>
+    </div>  
+    <div class="info">
+      <div class="col">
+        <h3>IP Address</h3>
+        <h1 class="ip"></h1>
+      </div>
+      <div class="line"></div>
+      <div class="col">
+        <h3>Location</h3>
+        <h1 class="location"></h1>
+      </div>
+      <div class="line"></div>
+      <div class="col">
+        <h3>Timezone</h3>
+        <h1 class="timezone"></h1>
+      </div>
+      <div class="line"></div>
+      <div class="col">
+        <h3>ISP</h3>
+        <h1 class="isp"></h1>
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script src="main.js"></script>
+</body>
+</html>
